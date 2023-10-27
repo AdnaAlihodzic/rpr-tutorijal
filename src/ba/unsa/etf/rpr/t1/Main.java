@@ -1,20 +1,13 @@
 package ba.unsa.etf.rpr.t1;
-
 import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-
+        Scanner ulaz = new Scanner(System.in);
         System.out.print("Unesite prvi broj: ");
-        int a = input.nextInt();
-
+        int a = ulaz.nextInt();
         System.out.print("Unesite drugi broj: ");
-        int b = input.nextInt();
-
-        System.out.println("Prvi broj: " + a);
-        System.out.println("Drugi broj: " + b);
-
-        input.close();
+        int b = ulaz.nextInt();
+        System.out.printf("Prvi broj je %d, a drugi broj je %d.", a, b);
+        ulaz.close();
     }
 }
